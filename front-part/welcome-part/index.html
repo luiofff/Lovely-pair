@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovely Pair</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="/front-part/faviconsMainPage.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/front-part/faviconsMainPage.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/front-part/faviconsMainPage.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/front-part/faviconsMainPage.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/front-part/faviconsMainPage.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/front-part/faviconsMainPage.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/front-part/faviconsMainPage.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/front-part/faviconsMainPage.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/front-part/faviconsMainPage.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/front-part/faviconsMainPage.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/front-part/faviconsMainPage.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/front-part/faviconsMainPage.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/front-part/faviconsMainPage.ico/favicon-16x16.png">
+    <link rel="manifest" href="/front-part/faviconsMainPage.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/front-part/faviconsMainPage.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="wrapper container mx-auto">
+        <!-- HeaderPart -->
+        <section class="head">
+            <div class="header">
+                <div class="change-language">
+                    <input type="button" id="langBtn" value="RU" class="rounded-lg lang-menu-text" name="menu-lang">
+                    <div class="lang-menu-defolt lang-menu-active lang-menu-text" id="langMenuJs">
+                        <button class="lang-menu-point" name="btnLangJs" value="0">RU</button>
+                        <button class="lang-menu-point" name="btnLangJs" value="1">EN</button>
+                        <button class="lang-menu-point" name="btnLangJs" value="2">CH</button>
+                        <button class="lang-menu-point" name="btnLangJs" value="3">KZ</button>
+                    </div>
+                </div>
+                <div class="logo">
+                    <span class="logo_text">
+                        <div class="logo_text1 mb-1" id="changeColorLogoJs1">Lovely</div>
+                        <div class="logo_text2" id="changeColorLogoJs2">Pair</div>
+                    </span>
+                </div>
+                <a href="#" id="activeThemeBtn">
+                    <div class="block-for-theme-btn rounded-full" id="themeChangeBlockJs">
+                        <span class="theme-logo" id="changeLogo">☾</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        
+        <section class="second container mx-auto">
+            <div class="main_part header">
+                <div class="img_block">
+                    <img class="" src="main_img.png">
+                </div>
+                <br>
+                <div class="card-first" id="cardJs">
+                    <div class="card-second p-2" id="secondCardJs">
+                       <input type="text" name="name" class="reg_field" placeholder="Введите имя" id="nameJs" required>
+                       <input type="text" name="sername" class="reg_field" placeholder="Введите фамилию" id="sernameJs" required>
+                       <input type="email" name="email" class="reg_field" placeholder="Введите email" id="emailJs" required>
+                       <input type="password" name="password" class="reg_field" placeholder="Введите пароль" id="passwordFJs" required>
+                       <input type="password" name="password" class="reg_field" placeholder="Подтвердите пароль" id="passwordSJs" required>
+                       <button class="btn rounded-lg" id="regBtnJs">Зарегистрироваться</button>
+                       <div class="entered-or-reg text-center p-3">
+                         <span class="enter" id="enterJs">Уже есть аккаунт?</span>
+                         <a href="#" class="btn_hrefed pl-1" id="logInJs">Войти</a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- JavaScript -->
+    <script src="/front-part/welcome-part/JavaScript/themeChangerBtn.js"></script>
+    <script src="/front-part/welcome-part/JavaScript/langChangeBtn.js"></script>
+    <script src="/front-part/welcome-part/JavaScript/changeLang.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+    background: linear-gradient(180deg, #FFFFFF 0%, #7D2063 224.44%);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1.2rem 2rem 0 2rem;
+    height: 9rem;
+}
+
+/* 
+logo */
+
+.logo {
+    height: 14rem;
+}
+
+.logo_text {
+    font-family: 'GV. time';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_text1 {
+    color: #111;
+    font-size: 3rem;
+    height: 2rem;
+}
+
+.logo_text2 {
+    float: right;
+    color: #111;
+    height: 17rem;
+    font-size: 3rem;
+}
+
+
+.pair-center-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #5D214D;
+    height: 5rem;
+    width: 17rem;
+}
+
+.text {
+    color: #fff;
+    font-family: "KTF Jermilov";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.heart {
+    color: rgb(255, 0, 0);
+}
+
+/* profile-theme-block */
+
+.profile-theme-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 8rem;
+    background: #5D214D;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.PrThLogo {
+    color: #fff;
+    font-family: "KTF Jermilov";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.spacer {
+    height: 100%;
+    background: white;
+    width: 1px;
+}
+
+/*------------------------------------------------------------slider */
+
+.selectorSlides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5D214D;
+    width: 4rem;
+    height: 2rem;
+    color: #fff;
+}
+
+/*------------------------------------------------------------main */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-block {
+    width: 30rem;
+    height: 30rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-img {
+    height: auto;
+    width: auto;
+}
+
+@media screen and (max-width:605px) {
+    .header {
+        height: 11rem;
+    }
+    .pair-center-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #5D214D;
+        height: 9rem;
+        width: 10rem;
+    }
+    .profile-theme-block {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 9rem;
+        width: 4.9rem;
+        padding: 0 2rem 0 2rem;
+        background: #5D214D;
+    }
+    .spacer {
+        height: 1px;
+        width: 4.9rem;
+        background: #fff;
+    }
+    @media screen and (max-width:438px) {
+        .logo_text1 {
+            color: #111;
+            font-size: 1.5rem;
+            height: 2rem;
+        }
+        
+        .logo_text2 {
+            float: right;
+            color: #111;
+            height: 17rem;
+            font-size: 1.5rem;
+        }
+        
+        
+        .pair-center-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #5D214D;
+            height: 9rem;
+            width: 8rem;
+        }
+        .profile-theme-block {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 9rem;
+            width: 4rem;
+            padding: 0 2rem 0 2rem;
+            background: #5D214D;
+        }
+        .spacer {
+            height: 1px;
+            width: 4rem;
+            background: #fff;
+        }
+        @media screen and (max-width:438px) {
+            .pair-center-block {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #5D214D;
+                height: 7rem;
+                width: 7rem;
+            }
+            .profile-theme-block {
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 7rem;
+                width: 4rem;
+                padding: 0 2rem 0 2rem;
+                background: #5D214D;
+            }
+            .spacer {
+                height: 1px;
+                width: 4rem;
+                background: #fff;
+            }
+            .PrThLogo {
+                color: #fff;
+                font-family: "KTF Jermilov";
+                font-style: normal;
+                font-size: 1.8rem;
+            }
+            .text {
+                color: #fff;
+                font-family: "KTF Jermilov";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.7rem;
+            }
+            .heart {
+                color: rgb(255, 0, 0);
+            }
+        }
+    }
+}
+

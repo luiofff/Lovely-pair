@@ -1,0 +1,271 @@
+*,
+*::before,
+*::after {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+    background: linear-gradient(180deg, #FFFFFF 0%, #7D2063 224.44%);
+}
+
+
+.wrapper {
+    display: block;
+}
+
+.head {
+    height: 11.8rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+}
+/* 
+languge-btn */
+
+.change-language {
+    width: 2rem;
+}
+
+#langBtn {
+    color: white;
+    background: black;
+    padding: 0.4rem 0.8rem;
+}
+
+.lang-menu-active {
+    position: absolute;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+}
+.lang-menu-defolt {
+    transition: 0.4s;
+    display: none;
+}
+
+.lang-menu-point {
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    background: #fff;
+    border: 0.1rem solid #111;
+}
+
+.lang-menu-text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.active-point {
+    transition: 0.4s;
+    background: #5D214D;
+    color: #fff;
+}
+
+
+/* 
+logo */
+
+.logo {
+    height: 14rem;
+}
+
+.logo_text {
+    font-family: 'GV. time';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_text1 {
+    color: #111;
+    font-size: 3rem;
+    height: 2rem;
+}
+
+.logo_text2 {
+    float: right;
+    color: #111;
+    height: 17rem;
+    font-size: 3rem;
+}
+
+/* theme */
+
+#activeThemeBtn {
+    height: 4rem;
+    width: 4rem;
+}
+
+.block-for-theme-btn {
+    margin: 1rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    background-color: #111;
+}
+
+.theme-logo {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.header_text {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #00B2FF;
+}
+
+.img_block {
+    position: fixed;
+    display: block;
+    height: 18%;
+    width: 40%;
+    bottom: 55%;
+}
+
+.main_part {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 33rem;
+    background: #5D214D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+}
+
+.card-second {
+    display: flex;
+    flex-direction: column;
+    width: 23rem;
+    height: 31rem;
+    border-radius: 2rem;
+    background: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 2rem;
+}
+
+.reg_field {
+    display: block;
+    margin-top: 2rem;
+    height: 4rem;
+    background: none;
+    border-bottom: 1px solid #111;
+    font: optional;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 0 1rem 0 1rem;
+    color: #fff;
+    padding-bottom: 0.2rem;
+}
+
+.btn {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #6F6FAB;
+    background: #5D214D;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.entered-or-reg {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #6F6FAB;
+    display: flex;
+    justify-content: center;
+}
+.btn_hrefed {
+    color: #111;
+}
+
+@media screen and (max-width:768px) {
+    .img_block {
+        display: none;
+    }
+    .main_part {
+        display: flex;
+        justify-content: center;
+    }
+    .card-first {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 18.9rem;
+        height: 25rem;
+        background: rgba(246, 197, 248, 0.62);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2rem;
+    }
+    
+    .card-second {
+        display: flex;
+        flex-direction: column;
+        width: 17rem;
+        height: 23rem;
+        border-radius: 2rem;
+        background: rgba(0, 178, 255, 0.18);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 2rem;
+    }
+    .btn {
+        margin-top: 4rem;
+        padding: 0.5rem;
+    }
+    .entered-or-reg {
+        font-family: 'Oswald';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.7rem;
+        color: #6F6FAB;
+    }
+}
+
