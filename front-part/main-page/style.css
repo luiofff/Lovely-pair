@@ -87,7 +87,8 @@ logo */
     align-items: center;
     background: #5D214D;
     height: 5rem;
-    width: 17rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .text {
@@ -146,26 +147,6 @@ logo */
     color: #fff;
 }
 
-/*------------------------------------------------------------main */
-
-.main {
-    display: flex;
-    justify-content: space-between;
-}
-
-.photo-block {
-    width: 30rem;
-    height: 30rem;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.photo-img {
-    height: auto;
-    width: auto;
-}
 
 @media screen and (max-width:605px) {
     .header {
@@ -273,3 +254,163 @@ logo */
     }
 }
 
+
+
+/*------------------------------------------------------------main */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.photo-block {
+    width: 30rem;
+    height: 30rem;
+    background: white;
+    position: relative;
+}
+.photo-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center center;
+}
+
+.info-block {
+    width: 40rem;
+    height: 30rem;
+    background-color: red;
+    background: rgba(255, 255, 255, 0.51);
+    border: 5px solid rgba(125, 32, 99, 0.37);
+    padding: 1rem;
+}
+
+.title-block {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.title-text {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    background: rgba(125, 32, 99, 0.37);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'KTF Jermilov';
+    font-style: normal;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.description {
+    margin-top: 1rem;
+    border: 0.2rem solid rgba(125, 32, 99, 0.37);
+    height: 80%;
+    padding: 0.7rem;
+}
+
+.location-block {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.location-block-text {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0.3rem 3rem 0.3rem 3rem;
+    border: 0.2rem solid rgba(125, 32, 99, 0.37);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'KTF Jermilov';
+    font-style: normal;
+    font-size: 1.4rem;
+    color: rgba(125, 32, 99, 0.37);
+}
+
+.text-for-card {
+    font-family: 'KTF Jermilov';
+    font-style: normal;
+    font-size: 1.1rem;
+    color: rgba(125, 32, 99, 0.37);
+}
+
+
+/* adapt */
+
+@media screen and (max-width:1024px) {
+    .info-block {
+        width: 30rem;
+        height: 27rem;
+        margin-left: 1rem;
+    }
+    .photo-block {
+        width: 30rem;
+        height: 27rem;
+    }
+    @media screen and (max-width:606px) {
+        .info-block {
+            width: 30rem;
+            height: 24rem;
+            margin-left: 1rem;
+        }
+        .photo-block {
+            width: 30rem;
+            height: 24rem;
+        }
+        .location-block-text {
+            font-size: 1rem;
+        }
+        .text-for-card {
+            font-size: 0.8rem
+        }
+        .title-text {
+            font-size: 1.2rem;
+        }
+        @media screen and (max-width:605px) {
+            .main {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .info-block {
+                margin-top: 1rem;
+                width: 25rem;
+                height: 30rem;
+            }
+            .photo-block {
+                width: 25rem;
+            }
+            @media screen and (max-width:408px) {
+                .info-block {
+                    width: 20rem;
+                    height: 30rem;
+                }
+                .photo-block {
+                    width: 20rem;
+                }
+                @media screen and (max-width:320px) {
+                    .info-block {
+                        width: 18rem;
+                        height: 30rem;
+                    }
+                    .photo-block {
+                        width: 18rem;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+
+
+
+/* ------------------------------------------------------ */

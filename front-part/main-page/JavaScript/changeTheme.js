@@ -8,6 +8,7 @@ changeTheme.addEventListener("click", () => {
         pairBlockJs.style.background = "#460B36";
         // change Theme
         profileBlockJs.style.background = "#460B36";
+        changeTheme.innerHTML = "☀";
         // logo
         changeColorLogoJs1.style.color = "#fff";
         changeColorLogoJs2.style.color = "#fff";
@@ -20,6 +21,7 @@ changeTheme.addEventListener("click", () => {
         pairBlockJs.style.background = "#5D214D";
         // change Theme
         profileBlockJs.style.background = "#5D214D";
+        changeTheme.innerHTML = "☾";
         // logo
         changeColorLogoJs1.style.color = "#111";
         changeColorLogoJs2.style.color = "#111";
