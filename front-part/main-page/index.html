@@ -29,22 +29,22 @@
     <div class="wrapper container mx-auto">
         <!-- header -->
         <section class="header">
-            <div class="logo">
+            <div class="logo" id="logoJs">
                 <span class="logo_text">
                     <div class="logo_text1 mb-1" id="changeColorLogoJs1">Lovely</div>
                     <div class="logo_text2" id="changeColorLogoJs2">Pair</div>
                 </span>
             </div>
             
-            <div class="pair-center-block rounded-3xl">
+            <div class="pair-center-block rounded-3xl" id="pairBlockJs">
                 <!-- dinamic field(back-end)-->
                 <span class="text">test</span>
                 <span class="text heart">❤</span>
                 <span class="text">test</span>
             </div>
 
-            <div class="profile-theme-block rounded-full">
-                <span class="PrThLogo">☾</span>
+            <div class="profile-theme-block rounded-full" id="profileBlockJs">
+                <span class="PrThLogo" id="changeTheme">☾</span>
                 <div class="spacer"></div> 
                 <span class="PrThLogo">И</span>
                 <!-- dynamic field -->
@@ -62,7 +62,19 @@
         <!-- main part -->
         <section class="main">
             <div class="photo-block rounded-xl">
-                <img src="/front-part/main-page/images/test2.jpeg" class="photo-img">
+                <img src="/front-part/main-page/images/test1.jpeg" class="photo-img">
+            </div>
+            <div class="info-block ">
+                <div class="title-block">
+                    <span class="title-text">Название</span>
+                </div>
+                <div class="description">
+                    <div class="location-block">
+                        <a href="#" class="dot">•</a>
+                        <span class="location-text">Город</span>
+                    </div>
+                    <p class="text-for-card">sadsdsadasdasdas<br>sdasda</p>
+                </div>
             </div>
         </section>
         <!-- main part -->
@@ -73,5 +85,6 @@
         </section>
         <!-- selector down -->
     </div>
+    <script src="/front-part/main-page/JavaScript/changeTheme.js"></script>
 </body>
 </html>
