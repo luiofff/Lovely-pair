@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+    background: linear-gradient(180deg, #FFFFFF 0%, #7D2063 224.44%);
+}
+
+.reg-form-for-css {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.logo {
+    height: 10rem;
+}
+
+.logo_text {
+    font-family: 'GV. time';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_text1 {
+    color: #111;
+    font-size: 3rem;
+    height: 2rem;
+}
+
+.logo_text2 {
+    float: right;
+    color: #111;
+    height: 17rem;
+    font-size: 3rem;
+}
+
+.txt-form {
+    color: #fff;
+    font-family: "KTF Jermilov";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+}
